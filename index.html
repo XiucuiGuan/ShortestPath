@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路径规划算法可视化</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>路径规划算法</h1>
+    <div id="controls">
+        <label for="gridWidth">网格宽度:</label>
+        <input type="number" id="gridWidth" value="20" min="1">
+        <label for="gridHeight">网格高度:</label>
+        <input type="number" id="gridHeight" value="20" min="1">
+        <button id="generateGrid">生成网格</button>
+        <label for="algorithmSelect">选择算法:</label>
+        <select id="algorithmSelect">
+            <option value="aStar">A*算法</option>
+            <option value="rrt">RRT算法</option>
+            <option value="rrtStar">RRT*算法</option>
+            <option value="bfs">广度优先搜索算法</option>
+            <option value="dfs">深度优先搜索算法</option>
+            <option value="dijkstra">迪杰斯特拉搜索算法</option>
+        </select>
+        <div id="algorithmDescription"></div>
+    </div>
+    <div id="grid"></div>
+    <div id="statusMessage"></div>
+    <script src="script.js"></script>
+</body>
+</html>
